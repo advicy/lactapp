@@ -1,0 +1,2 @@
+rootProject.name='Lactapp'
+include ':app'
