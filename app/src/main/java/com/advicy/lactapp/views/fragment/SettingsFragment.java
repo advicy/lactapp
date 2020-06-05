@@ -15,6 +15,10 @@ import androidx.lifecycle.ViewModelProvider;
 
 public class SettingsFragment extends Fragment {
 
+    public SettingsFragment(){
+
+    }
+
     private SettingsViewModel mViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,

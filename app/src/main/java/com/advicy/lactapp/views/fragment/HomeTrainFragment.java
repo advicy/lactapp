@@ -2,6 +2,7 @@ package com.advicy.lactapp.views.fragment;
 
 import androidx.lifecycle.ViewModelProvider;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -10,13 +11,19 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 import com.advicy.lactapp.R;
 import com.advicy.lactapp.viewModels.HomeTrainViewModel;
+import com.advicy.lactapp.views.activities.trainActivity;
 
 public class HomeTrainFragment extends Fragment {
 
     private HomeTrainViewModel mViewModel;
+
+    public HomeTrainFragment(){
+
+    }
 
     public static HomeTrainFragment newInstance() {
         return new HomeTrainFragment();
@@ -29,4 +36,8 @@ public class HomeTrainFragment extends Fragment {
         return root;
     }
 
+    public void startTrainActivity(View view){
+        //Intent intent = new Intent(this.getContext(), trainActivity.class);
+        //startActivity(intent);
+    }
 }

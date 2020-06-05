@@ -17,6 +17,10 @@ public class DataFragment extends Fragment {
 
     private DataViewModel mViewModel;
 
+    public DataFragment(){
+
+    }
+
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         mViewModel = new ViewModelProvider(this).get(DataViewModel.class);

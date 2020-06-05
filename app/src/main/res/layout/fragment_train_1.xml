@@ -2,23 +2,21 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/home_train_fragment"
+    android:id="@+id/ConstraintLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".views.fragment.HomeTrainFragment" >
+    tools:context=".views.fragment.Train_1">
 
     <Button
-        android:id="@+id/button_start_train"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:layout_marginBottom="100dp"
-        android:background="@drawable/circle"
-        android:backgroundTint="@color/colorAccent"
-        android:onClick="startTrainActivity"
-        android:text="@string/start"
+        android:id="@+id/train_1_button_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:layout_marginStart="70dp"
+        android:background="@color/colorPrimary"
+        android:onClick="finishTrain"
+        android:text="@string/back"
         android:textColor="@color/colorWhite"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
