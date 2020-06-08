@@ -7,7 +7,8 @@ public class Settings {
     public Sound soundSetting;
     public Notifications notifiSetting;
     private int key;
-    Settings(){
+
+    public Settings(){
         profileSetting = new Profile();
         soundSetting = new Sound();
         notifiSetting = new Notifications();
@@ -45,63 +46,58 @@ public class Settings {
     */
 
     //Methods for the profile
-    public String getProfileName(){return profileSetting.getName()};
+    public String getProfileName(){return profileSetting.getName();}
     public void setProfileName(String name){
         this.profileSetting.setName(name);
-        return;
     }
+
     public int getProfileAge(){return profileSetting.getAge();}
     public void setProfileAge(int age){
         this.profileSetting.setAge(age);
-        return;
     }
+
     public char getProfileGender(){return profileSetting.getGender();}
     public void setProfileGender(char gender){
         this.profileSetting.setGender(gender);
-        return;
     }
+
     public int getProfileKey(){return profileSetting.getKey();}
     public void setProfileKey(int key){
         this.profileSetting.setKey(key);
-        return;
     }
+
     public void setProfileSetting(String name, int age, char gender, int key) {
         this.profileSetting.setName(name);
         this.profileSetting.setAge(age);
         this.profileSetting.setGender(gender);
         this.profileSetting.setKey(key);
-        return;
     }
 
     //Methods for the sound
     public int getSoundSettingsoundMain(){return this.soundSetting.getsoundMain();}
     public void setSoundSettingsoundMain(int soundMain){
         this.soundSetting.setsoundMain(soundMain);
-        return;
     }
     public int getSoundSettingsoundVoice(){return this.soundSetting.getsoundVoice();}
     public void setSoundSettingsoundVoice(int soundVoice){
         this.soundSetting.setsoundVoice(soundVoice);
-        return;
     }
     public int getSoundSettingsoundMusic(){return this.soundSetting.getsoundMusic();}
     public void setSoundSettingsoundMusic(int soundMusic){
         this.soundSetting.setsoundMusic(soundMusic);
-        return;
     }
     public void setSoundSettings(int soundMain, int soundVoice, int soundMusic){
         this.soundSetting.setsoundMain(soundMain);
         this.soundSetting.setsoundVoice(soundVoice);
         this.soundSetting.setsoundMusic(soundMusic);
-        return;
     }
 
     //Methods for the notifications
     public boolean getNotificationsSettingpushNotifications(){return this.notifiSetting.getpushNotifications();}
     public void setNotificationsSettingpushNotifications(boolean pushNotifications) {
         this.notifiSetting.setpushNotifications(pushNotifications);
-        return;
     }
+
     public int getremindTrainingTime(){return this.notifiSetting.getRemindTrainingTime();}
     public void setremindTrainingTime(int remindTrainingTime){
         this.notifiSetting.setRemindTrainingTime(remindTrainingTime);

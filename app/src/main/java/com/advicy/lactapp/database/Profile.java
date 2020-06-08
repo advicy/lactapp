@@ -16,7 +16,7 @@ public class Profile {
     }
 
     protected String getName() {return name;}
-    protected void setName(string name){
+    protected void setName(String name){
         this.name = name;
         return;
     }

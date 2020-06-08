@@ -11,20 +11,17 @@ public class Sound {
         this.soundVoice = soundVoice;
         this.soundMusic = soundMusic;
     }
-    protected int getsoundMain(){return soundMain};
+    protected int getsoundMain(){return soundMain;};
     protected void setsoundMain(int soundMain){
         this.soundMain = soundMain;
-        return;
     }
     protected int getsoundVoice(){return soundVoice;}
     protected void setsoundVoice(int soundVoice){
         this.soundVoice = soundVoice;
-        return;
     }
     protected int getsoundMusic(){return soundMusic;}
     protected void setsoundMusic(int soundMusic){
         this.soundMusic = soundMusic;
-        return;
     }
 
 }
