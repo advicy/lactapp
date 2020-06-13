@@ -38,4 +38,7 @@ dependencies {
     // Navigation
     implementation 'androidx.navigation:navigation-fragment:2.2.2'
     implementation 'androidx.navigation:navigation-ui:2.2.2'
+
+    //Graph
+    implementation 'com.jjoe64:graphview:4.2.2'
 }

@@ -12,6 +12,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.TextView;
 
 import com.advicy.lactapp.R;
 import com.advicy.lactapp.viewModels.HomeTrainViewModel;
@@ -33,6 +34,10 @@ public class HomeTrainFragment extends Fragment {
                              ViewGroup container, Bundle savedInstanceState) {
         mViewModel = new ViewModelProvider(this).get(HomeTrainViewModel.class);
         View root = inflater.inflate(R.layout.fragment_home_train, container, false);
+        TextView title_train_kind = root.findViewById(R.id.title_train_kind);
+        title_train_kind.setText("Intervalltraining");
+        TextView title_train_plan = root.findViewById(R.id.title_train_plan);
+        title_train_plan.setText("Trainingplan A");
         return root;
     }
 
