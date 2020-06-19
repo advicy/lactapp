@@ -1,4 +1,5 @@
 apply plugin: 'com.android.application'
+apply plugin: 'kotlin-kapt'
 
 android {
     compileSdkVersion 28
@@ -43,4 +44,31 @@ dependencies {
     //Graph
     implementation 'com.jjoe64:graphview:4.2.2'
     compileOnly 'com.google.android.wearable:wearable:2.5.0'
+
+    //Room
+    implementation "androidx.room:room-runtime:$rootProject.roomVersion"
+    kapt "androidx.room:room-compiler:$rootProject.roomVersion"
+    implementation "androidx.room:room-ktx:$rootProject.roomVersion"
+    androidTestImplementation "androidx.room:room-testing:$rootProject.roomVersion"
+
+    //Lifecycle components
+    implementation "androidx.lifecycle:lifecycle-extensions:$rootProject.archLifecycleVersion"
+    kapt "androidx.lifecycle:lifecycle-compiler:$rootProject.archLifecycleVersion"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$rootProject.archLifecycleVersion"
+
+    //Kotlin
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    api "org.jetbrains.kotlinx:kotlinx-coroutines-core:$rootProject.coroutines"
+    api "org.jetbrains.kotlinx:kotlinx-coroutines-android:$rootProject.coroutines"
+
+    implementation "com.google.android.material:material:$rootProject.materialVersion"
+
+
+}
+ext{
+    roomVersion = '2.2.5'
+    archLifecycleVersion = '2.2.0'
+    materialVersion = '1.1.0'
+    coroutines = '1.3.4'
+
 }
