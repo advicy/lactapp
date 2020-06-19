@@ -26,4 +26,9 @@ public class homeActivity extends AppCompatActivity {
         Intent intent = new Intent(this, trainActivity.class);
         startActivity(intent);
     }
+
+    public void startDataActivity(View view) {
+        Intent intent = new Intent(this, dataActivity.class);
+        startActivity(intent);
+    }
 }

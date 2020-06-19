@@ -12,6 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:background="#CCCCCC"
+        android:onClick="startDataActivity"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -36,6 +37,8 @@
             android:layout_marginTop="16dp"
             android:text="@string/title_statistics"
             android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -65,6 +68,8 @@
             android:layout_marginTop="8dp"
             android:text="@string/title_articles"
             android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 

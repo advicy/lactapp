@@ -38,4 +38,8 @@ public class DataFragment extends Fragment {
         graph.addSeries(series);
         return root;
     }
+
+    public void startDataActivity(View view) {
+
+    }
 }
