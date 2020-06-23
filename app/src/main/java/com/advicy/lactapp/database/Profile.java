@@ -8,6 +8,13 @@ public class Profile {
     private char femaleMale;
     private int key;
 
+    public Profile(){
+        this.name = null;
+        this.age = 0;
+        this.femaleMale = 'm';
+        this.key = 0;
+    }
+
     public Profile(String name, int age, char femaleMale, int key){
         this.name = name;
         this.age = age;
