@@ -5,9 +5,14 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.util.Log;
 
 import com.advicy.lactapp.BuildConfig;
 import com.advicy.lactapp.R;
+import com.advicy.lactapp.database.DatabaseHelper;
+import com.advicy.lactapp.database.Profile;
+
+import java.util.List;
 
 public class launchActivity extends AppCompatActivity {
 
@@ -18,6 +23,8 @@ public class launchActivity extends AppCompatActivity {
         //Intent appIntent = new Intent(this, homeActivity.class);
         //finish();
         //startActivity(appIntent);
+         setSettings();
+         loadSettings();
 
         if(checkFirstRun()){
             Intent appIntent = new Intent(this, homeActivity.class);
@@ -29,7 +36,6 @@ public class launchActivity extends AppCompatActivity {
             finish();
             startActivity(appIntent);
         }
-
     }
 
     private boolean checkFirstRun() {
@@ -64,5 +70,18 @@ public class launchActivity extends AppCompatActivity {
         else {
             return false;
         }
+    }
+
+    private void setSettings(){
+        DatabaseHelper dbhelper = new DatabaseHelper(this);
+        dbhelper.addProfile(new Profile());
+    }
+
+    private void loadSettings(){
+        DatabaseHelper dbhelper = new DatabaseHelper(this);
+        List<Profile> profileList = dbhelper.getAllProfiles();
+        int key = profileList.get(0).getKey();
+        Profile myProfile = dbhelper.getProfile(key);
+        Log.d("DATABASE LOAD","the profile is" + myProfile.getFemaleMale());
     }
 }

@@ -34,7 +34,7 @@ public class DatabaseHelper extends SQLiteOpenHelper{
         onCreate(db);
     }
 
-    void addProfile(Profile profile) {
+    public void addProfile(Profile profile) {
         SQLiteDatabase db = this.getWritableDatabase();
 
         ContentValues values = new ContentValues();
@@ -46,7 +46,7 @@ public class DatabaseHelper extends SQLiteOpenHelper{
         db.close();
     }
 
-    Profile getProfile(int id){
+    public Profile getProfile(int id){
         SQLiteDatabase db = this.getReadableDatabase();
 
         Cursor cursor = db.query(TABLE_NAMES, new String[] { KEY_ID,
