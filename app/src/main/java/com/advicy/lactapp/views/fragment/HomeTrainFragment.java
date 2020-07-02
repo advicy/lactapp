@@ -35,9 +35,9 @@ public class HomeTrainFragment extends Fragment {
         mViewModel = new ViewModelProvider(this).get(HomeTrainViewModel.class);
         View root = inflater.inflate(R.layout.fragment_home_train, container, false);
         TextView title_train_kind = root.findViewById(R.id.title_train_kind);
-        title_train_kind.setText("Intervalltraining");
+        title_train_kind.setText("Endurance training");
         TextView title_train_plan = root.findViewById(R.id.title_train_plan);
-        title_train_plan.setText("Trainingplan A");
+        title_train_plan.setText("Training plan A");
         return root;
     }
 
