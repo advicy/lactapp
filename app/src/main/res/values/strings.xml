@@ -13,6 +13,7 @@
     <string name="dummy">dummy</string>
     <string name="more">more</string>
     <string name="title_activity_data">Data</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="faster">exercise more</string>
+    <string name="maintain">maintain speed</string>
+    <string name="slower">slow down</string>
 </resources>
