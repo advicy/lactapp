@@ -42,4 +42,8 @@ public class Train_1 extends Fragment {
     public void finishTrain(View view){
 
     }
+
+    public void startRun(View view){
+
+    }
 }

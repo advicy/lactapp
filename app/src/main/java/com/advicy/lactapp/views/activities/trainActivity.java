@@ -19,4 +19,10 @@ public class trainActivity extends AppCompatActivity {
     public void finishTrain(View view) {
         finish();
     }
+
+    public void startRun(View view) {
+        Intent intent = new Intent(this, runActivity.class);
+        finish();
+        startActivity(intent);
+    }
 }

@@ -23,8 +23,8 @@ public class launchActivity extends AppCompatActivity {
         //Intent appIntent = new Intent(this, homeActivity.class);
         //finish();
         //startActivity(appIntent);
-         setSettings();
-         loadSettings();
+         //setSettings();
+         //loadSettings();
 
         if(checkFirstRun()){
             Intent appIntent = new Intent(this, homeActivity.class);
@@ -42,7 +42,7 @@ public class launchActivity extends AppCompatActivity {
 
         final String PREFS_NAME = "LaunchPreferences";
         final String PREF_VERSION_CODE_KEY = "app_version_code";
-        final int DOES_NOT_EXIST = -1;
+        final int DOES_NOT_EXIST = 0;
 
         //get current Version
         int currentVersion = BuildConfig.VERSION_CODE;
